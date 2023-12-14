@@ -22,6 +22,6 @@ def ask_user_int_answer() -> str:
     return prompt.integer(prompt="Your answer: ")
 
 
-def show_uncorrect_answer(user_answer: str, game_answer: str, user_name: str):
-    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{game_answer}'.")
+def show_uncorrect_answer(user_ans: str, game_ans: str, user_name: str):
+    print(f"'{user_ans}' is wrong answer ;(. Correct answer was '{game_ans}'.")
     print(f"Let's try again, {user_name}!")

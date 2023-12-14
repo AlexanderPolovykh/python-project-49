@@ -4,7 +4,6 @@ from brain_games.cli import (
     show_uncorrect_answer,
 )
 from random import randint
-from math import gcd
 
 MIN_RND_NUMBER = 1  # min random number
 MAX_RND_NUMBER = 10  # max random number
@@ -23,15 +22,15 @@ def progression_game():
         position = get_random()
         start = get_random()
         step = get_random()
-        progress = [el for el in range(start, start + step * NUM_PROGRESS, step)]
+        progr = [el for el in range(start, start + step * NUM_PROGRESS, step)]
         progr_str = ""
         idx = 0
         while idx < NUM_PROGRESS:
-            progr_str += " .." if idx == position - 1 else f" {progress[idx]}"
+            progr_str += " .." if idx == position - 1 else f" {progr[idx]}"
             idx += 1
         print(f"Question:{progr_str}")
         user_answer = ask_user_int_answer()
-        game_answer = progress[position - 1]
+        game_answer = progr[position - 1]
         if user_answer != game_answer:
             show_uncorrect_answer(user_answer, game_answer, user_name)
             return
