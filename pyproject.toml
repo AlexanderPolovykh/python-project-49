@@ -10,7 +10,7 @@ packages = [
 classifiers = [
     "Private :: Do Not Upload"
 ]
-repository = https://github.com/AlexanderPolovykh/python-project-49.git
+repository = "https://github.com/AlexanderPolovykh/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.10"
