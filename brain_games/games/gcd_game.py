@@ -32,4 +32,4 @@ def gcd_game():
             show_uncorrect_answer(user_answer, game_answer, user_name)
             return
         print("Correct!")
-    print(f"Congratulation, {user_name}!")
+    print(f"Congratulations, {user_name}!")
